@@ -1,11 +1,10 @@
-package Object;
+package object;
 
 public class School implements Comparable<School> {
 	private int idSchool;
 	private String nameSchool;
 	
-	public School(int idSchool) {
-		this.idSchool = idSchool;
+	public School() {
 	}
 	public School(int idSchool, String nameSchool) {
 		this.idSchool = idSchool;
@@ -25,7 +24,7 @@ public class School implements Comparable<School> {
 	}
 	@Override
 	public String toString() {
-		return "|" + nameSchool + "\t|";
+		return "|" +idSchool+"\t|"+ nameSchool + "\t";
 	}
 	@Override
 	public int compareTo(School o) {

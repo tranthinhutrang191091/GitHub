@@ -1,18 +1,20 @@
-package Object;
+package object;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class Student implements Comparable<Student> {
 	private int idStudent;
 	private String fullName;
 	private int age;
 	private float score;
-	public Student(int idStudent) {
-		this.idStudent = idStudent;
+	public Student() {
 	}
-	public Student(int idStudent, String fullName, int age, float score) {
+	public Student(int idStudent, String fullName, int age,float score) {
 		this.idStudent = idStudent;
 		this.fullName = fullName;
 		this.age = age;
-		this.score = score;
+		this.score=score;
 	}
 	public int getIdStudent() {
 		return idStudent;
@@ -40,7 +42,7 @@ public class Student implements Comparable<Student> {
 	}
 	@Override
 	public String toString() {
-		return "|" + idStudent + "\t|" + fullName + "\t|" + age + "\t|" + score + "\t|";
+		return "|" + idStudent + "\t|" + fullName + "\t|" + age + "\t|"+ score + "\t";
 	}
 	@Override
 	public int hashCode() {

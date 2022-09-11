@@ -1,10 +1,13 @@
-package Object;
+package object;
+
+import java.util.LinkedList;
+
 
 public class Class implements Comparable<Class> {
 	private int idClass;
 	private String nameClass;
-	public Class(int idClass) {
-		this.idClass = idClass;
+	
+	public Class() {
 	}
 	public Class(int idClass, String nameClass) {
 		this.idClass = idClass;
@@ -25,7 +28,7 @@ public class Class implements Comparable<Class> {
 	
 	@Override
 	public String toString() {
-		return "|"+ nameClass + "\t|";
+			return "|"+ idClass+ "\t|"+ nameClass + "\t";
 	}
 	@Override
 	public int hashCode() {
@@ -56,5 +59,7 @@ public class Class implements Comparable<Class> {
 		String nameO=o.getNameClass();
 		return nameThis.compareTo(nameO);
 	}
+	
+	
 	
 }

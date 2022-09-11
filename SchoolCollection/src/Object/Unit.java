@@ -1,12 +1,11 @@
-package Object;
+package object;
 
 public class Unit implements Comparable<Unit>{
 	private int idUnit;
 	private String nameUnit;
 	
 	
-	public Unit(int idUnit) {
-		this.idUnit = idUnit;
+	public Unit() {
 	}
 
 	public Unit(int idUnit, String nameUnit) {
@@ -32,7 +31,7 @@ public class Unit implements Comparable<Unit>{
 
 	@Override
 	public String toString() {
-		return "|" + nameUnit + "\t|";
+		return "|"+ idUnit+"\t|" + nameUnit + "\t";
 	}
 
 	@Override
